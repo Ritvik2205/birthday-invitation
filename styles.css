@@ -55,7 +55,7 @@ img {
     width: 100%;
 }
 
-svg #pop-up {
+svg #click-me {
     animation: scaling 2s infinite;
     transform-origin: center;
 }
