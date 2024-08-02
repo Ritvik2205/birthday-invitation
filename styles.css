@@ -22,9 +22,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #262626, #8C8C8C, #595959);
+    background: linear-gradient(45deg, #262626, #404040, #595959);
     background-size: 600% 100%;
-    animation: gradient 16s linear infinite;
+    animation: gradient 10s linear infinite;
 }
 
 @keyframes gradient {
@@ -43,13 +43,40 @@ body {
     height: 100%;
     width: 100%;
     /* background: #fff; */
-    padding: 25px;
+    /* padding: 25px; */
     border-radius: 5px;
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
-    display: flex;    
+    /* display: flex;     */
 }
 
+svg,
 img {
     height: 100%;
     width: 100%;
 }
+
+svg #pop-up {
+    animation: scaling 2s infinite;
+    transform-origin: center;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
